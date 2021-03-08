@@ -1,0 +1,78 @@
+.Loop1Step4 {
+  background-color: #8e44ad;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  .wrapper {
+    width: 40vw;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // column-gap: 2rem;
+
+    .grid1 {
+      .message {
+        display: flex;
+        align-items: center;
+        margin-bottom: -1.2rem;
+
+        span {
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
+          background-color: #2a80b9;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-size: 1.25rem;
+          font-weight: 600;
+          margin-right: 1rem;
+        }
+
+        p {
+          color: #000;
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .grid2 {
+      p {
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
+      .btns {
+        button {
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .btnBack {
+          padding: 1rem 1.5rem;
+          margin-right: 1rem;
+          border: none;
+          font-size: 1.125rem;
+          font-weight: 500;
+        }
+
+        .btnSubmit {
+          padding: 1rem 1.5rem;
+          border: none;
+          font-size: 1.125rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
