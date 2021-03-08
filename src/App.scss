@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+
+  .goBack {
+    position: fixed;
+    background: green;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+
+    &:hover {
+      border-radius: none;
+      background: lightgreen;
+      color: darkgreen;
+    }
+  }
+}
