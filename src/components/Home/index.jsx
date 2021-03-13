@@ -14,7 +14,7 @@ const Directory = () => {
         <Link to="/loop1-step4">Loop1Step4</Link>
         <Link to="/loop1-step5">Loop1Step5</Link>
         <Link to="/loop1-step6">Loop1Step6</Link>
-        <Link to="/">Loop1Step7</Link>
+        <Link to="/loop1-step7">Loop1Step7</Link>
         <Link to="/">Loop1Step8</Link>
         <Link to="/">Loop1Step9</Link>
         <Link to="/">Loop1Step10</Link>

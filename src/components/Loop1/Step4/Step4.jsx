@@ -8,7 +8,8 @@ const Loop1Step4 = () => {
   const [activeStepIndex, setActiveStepIndex] = useState(0);
 
   const goToStep = (index) => {
-    if (index === 2 && activeStepIndex === 0) return
+    if (index === 2 && activeStepIndex === 0) return;
+    setActiveStepIndex(index);
   }
   const proceed = () => setActiveStepIndex(activeStepIndex + 1);
   const goBack = () => setActiveStepIndex(activeStepIndex - 1);
@@ -19,8 +20,8 @@ const Loop1Step4 = () => {
         <div className="steps">
           {steps.map((step, index) => (
             <div
+              onClick={() => goToStep(index)}
               className={`step ${activeStepIndex >= index ? "active" : ""}`}
-              onClick={() => setActiveStepIndex(index)}
               key={`loop1s4_step-${index}`}
             >
               <span className="number">{index + 1}</span>
