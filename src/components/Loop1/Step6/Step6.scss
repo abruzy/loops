@@ -1,0 +1,15 @@
+.Loop1Step6 {
+  height: 100vh;
+  background-color: indigo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+
+  .box {
+    height: 45rem;
+    width: 40rem;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+}

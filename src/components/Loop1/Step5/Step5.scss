@@ -5,4 +5,27 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
+  h1 {
+    font-size: 2rem;
+
+    .cursor {
+      width: 2px;
+      height: 2rem;
+      margin-left: 0.125rem;
+      margin-bottom: -0.35rem;
+      background-color: black;
+      display: inline-block;
+      animation: blink 0.85s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
 }
