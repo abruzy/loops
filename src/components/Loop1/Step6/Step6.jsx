@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import './Step6.scss'
 
@@ -9,6 +9,12 @@ const Loop1Step6 = () => {
     console.log(e)
     setPosition({ x: e.clientX, y: e.clientY })
   }
+
+  useEffect(() => {
+    window.addEventListener('mousemove', (e) => {
+      // const mouseX = setPosition()
+    })
+  }, [])
 
   return (
     <div className="Loop1Step6">

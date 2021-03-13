@@ -14,9 +14,11 @@ const Loop1Step5 = () => {
 
     const interval = setInterval(() => {
       if (currentWordPosition > currentWord.length) {
-        setTyped("");
-        currentWordPosition = 1
-        setCurrentWordIndex(currentWordIndex + 1)
+        setTimeout(() => {
+          setTyped("");
+          currentWordPosition = 1
+          setCurrentWordIndex(currentWordIndex + 1)
+        }, 1000)
       } else {
         setTyped(currentWord.substr(0, currentWordPosition));
 
@@ -26,7 +28,7 @@ const Loop1Step5 = () => {
           currentWordPosition++
         }
       }
-    }, 1000);
+    }, 300);
 
     return () => {
       clearInterval(interval);
