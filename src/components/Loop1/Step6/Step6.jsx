@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './Step6.scss'
 
 const Loop1Step6 = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 })
+
+  const onMouseMove = (e) => {
+    console.log(e)
+    setPosition({ x: e.clientX, y: e.clientY })
+  }
+
   return (
     <div className="Loop1Step6">
-      <div className="box"></div>
+      <div className="box" onMouseMove={(e) => onMouseMove(e)}></div>
+      <div>X: {position.x}, Y: {position.y}</div>
     </div>
   )
 }

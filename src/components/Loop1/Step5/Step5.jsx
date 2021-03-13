@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import './Step5.scss'
 
-const words = ["design", "frontend", "backend", "testing"];
+const words = ["design", "frontend", "backend", "testing", " stop"];
 
 const Loop1Step5 = () => {
   const [typed, setTyped] = useState("");
@@ -19,7 +19,12 @@ const Loop1Step5 = () => {
         setCurrentWordIndex(currentWordIndex + 1)
       } else {
         setTyped(currentWord.substr(0, currentWordPosition));
-        currentWordPosition++;
+
+        if (currentWord.trim() === "stop") {
+          setCurrentWordIndex(0)
+        } else {
+          currentWordPosition++
+        }
       }
     }, 1000);
 

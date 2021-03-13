@@ -10,7 +10,7 @@ const Loop1Step2 = () => {
   const changeIndex = (e) => {
     e.preventDefault();
     const index = parseInt(e.target.index.value, 10);
-    if (Number.isNaN(index) || index > contents.length || index < 1) {
+    if (!index || Number.isNaN(index) || index > contents.length || index < 1) {
       alert("Not a valid index");
       return;
     }
