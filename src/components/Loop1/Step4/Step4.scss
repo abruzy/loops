@@ -3,61 +3,61 @@
   display: flex;
   align-items: center;
   background: #8e44ad;
-}
 
-.wrapper {
-  padding: 2rem 3rem;
-  display: flex;
-  flex-grow: 1;
-  margin: 0 10vw;
-}
+  .wrapper {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-grow: 1;
+    margin: 0 10vw;
+  }
 
-.steps {
-  display: grid;
-  grid-row-gap: 0.5rem;
-  margin-right: 4rem;
-}
-.step {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  grid-column-gap: 1rem;
-  cursor: pointer;
-  color: #858585;
-}
+  .steps {
+    display: grid;
+    grid-row-gap: 0.5rem;
+    margin-right: 4rem;
+  }
+  .step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-column-gap: 1rem;
+    cursor: pointer;
+    color: #858585;
+  }
 
-.step .number {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  color: #808080;
-  background: #f8f8f8;
-}
-.step.active .number {
-  color: white;
-  background: #2a80b9;
-}
+  .step .number {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #808080;
+    background: #f8f8f8;
+  }
+  .step.active .number {
+    color: white;
+    background: #2a80b9;
+  }
 
-.step.active,
-.step:hover,
-.step:hover .number {
-  color: black;
-}
-.step.active:hover .number {
-  color: white;
-}
+  .step.active,
+  .step:hover,
+  .step:hover .number {
+    color: black;
+  }
+  .step.active:hover .number {
+    color: white;
+  }
 
-button {
-  background: #f1f1f1;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 1rem 2rem;
-  border-radius: 2px;
-  margin-right: 0.5rem;
-}
-button:focus {
-  outline: grey 1px solid;
+  button {
+    background: #f1f1f1;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+  }
+  button:focus {
+    outline: grey 1px solid;
+  }
 }
