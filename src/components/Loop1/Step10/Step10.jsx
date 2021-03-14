@@ -9,6 +9,7 @@ const Loop1Step10 = () => {
   const [styles, setStyles] = useState({})
 
   const _dragStart = (e) => {
+    console.log(e)
     setDiffX(e.screenX - e.currentTarget.getBoundingClientRect().left);
     setDiffY(e.screenY - e.currentTarget.getBoundingClientRect().top);
     setDragging(true)
@@ -16,8 +17,8 @@ const Loop1Step10 = () => {
 
   const _dragging = (e) => {
     if (dragging) {
-      var left = e.screenX - diffX;
-      var top = e.screenY - diffY;
+      let left = e.screenX - diffX;
+      let top = e.screenY - diffY;
 
       setStyles({ left, top })
     }
