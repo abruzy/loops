@@ -38,7 +38,7 @@ const Loop1Step5 = () => {
   return (
     <div className="Loop1Step5">
       <h1>
-        We can help with {typed}
+        We can help you with {typed}
         <span className="cursor" />
       </h1>
     </div>

@@ -1,15 +1,18 @@
 .Loop1Step6 {
+  background-color: #31326c;
   height: 100vh;
-  background-color: indigo;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem;
+  display: grid;
+  place-items: center;
 
   .box {
-    height: 45rem;
-    width: 40rem;
-    background-color: #fff;
+    width: 35rem;
+    height: 35rem;
+    background: white;
     border-radius: 5px;
+    perspective: 1000px;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
   }
 }
