@@ -1,0 +1,16 @@
+.Loop1Step10 {
+  height: 100vh;
+  background-color: indigo;
+  position: relative;
+
+  .step10-box {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    cursor: move;
+    top: 150px;
+    left: 520px;
+  }
+}
