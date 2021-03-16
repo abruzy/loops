@@ -7,13 +7,8 @@ const Loop1Step6 = () => {
   const [y, setY] = useState(0);
 
   useEffect(() => {
-    const winX = window.innerWidth / 2;
-    const winY = window.innerHeight / 2;
-
     const el = document.querySelector("body");
     el.addEventListener("mousemove", (e) => {
-      // setY((e.clientX - winX) / 90);
-      // setX(-(e.clientY - winY) / 90);
       setY(-e.clientX / 90);
       setX(-e.clientY / 90);
     });

@@ -6,8 +6,6 @@ const Loop1Step8 = () => {
   const [open, setOpen] = useState(false);
   const [selectedButton, setSelectedButton] = useState("")
 
-  console.log(selectedButton)
-
   return (
     <div className="Loop1Step8">
       <div className="step8_wrapper">
