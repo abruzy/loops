@@ -1,3 +1,21 @@
 .Loop1Step9 {
   height: 100vh;
+  background-color: #faf9fa;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+
+  .box {
+    height: 15rem;
+    width: 17rem;
+    background-color: #fffeff;
+    margin: 8rem 3rem 0 0;
+    border: 2px solid #f0eff0;
+  }
+
+  .large-box {
+    height: 50rem;
+    width: 40rem;
+    background-color: #f0eef0;
+  }
 }

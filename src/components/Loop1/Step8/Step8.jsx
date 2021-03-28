@@ -12,7 +12,7 @@ const Loop1Step8 = () => {
         <button
           onClick={() => {
             setSelectedButton('search');
-            setOpen(!open);
+            setOpen(true);
           }}
         >
           Search
@@ -20,28 +20,27 @@ const Loop1Step8 = () => {
         <button
           onClick={() => {
             setSelectedButton('run');
-            setOpen(!open);
+            setOpen(true);
           }}
         >
           Run
         </button>
       </div>
-      {selectedButton === 'search' ? (
+      {selectedButton === 'search' && (
         <div className={open ? 'overlay' : ''} onClick={() => setOpen(false)}>
           <div className={`sidenav ${open ? 'active' : ''}`}>
             <p>Whoa! You found me</p>
-            <button onClick={() => setOpen(!open)}>Hide back</button>
+            <button onClick={() => setOpen(false)}>Hide back</button>
           </div>
         </div>
-      ) : selectedButton === 'run' ? (
+      )}{' '}
+      {selectedButton === 'run' && (
         <div className={open ? 'overlay' : ''} onClick={() => setOpen(false)}>
           <div className={`sidenav ${open ? 'active' : ''}`}>
             <p>Please don't run me!</p>
-            <button onClick={() => setOpen(!open)}>Close</button>
+            <button onClick={() => setOpen(false)}>Close</button>
           </div>
         </div>
-      ) : (
-        ''
       )}
     </div>
   );
